@@ -2,13 +2,13 @@
 
 <p>
   <strong>Title:</strong>
-  リーダブルコード
+  <%= @book.title %>
 </p>
 
 <p>
   <strong>Body:</strong>
-  より良いコードを書くためのシンプルで実践的なテクニック
+  <%= @book.body %>
 </p>
 
-<a class="edit_122710" href="/books/122710/edit">Edit</a> |
-<a class="back" href="/books">Back</a>
+<%= link_to 'Edit', edit_book_path(@book) %> |
+<%= link_to 'Back', books_path %>
